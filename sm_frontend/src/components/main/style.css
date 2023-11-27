@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.main_title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 6rem;
+    padding-top: 1rem;
+}
+.accounting_server {
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2.5px solid;
+    border-color: var(--text-color);
+    padding-left: 10px;
+}
+
+.accounting_text{
+    color: #9099a2;
+    font-size: 1.2rem;
+    margin-left: 20rem;
+    width: 800px;
+    text-align: right;
+}
+.main_1{
+    height: 450px;
+    width: 350px;
+    border: 1px solid;
+    border-color: #5a5a5a1c;
+    margin: 50px 10px;
+    overflow: hidden;
+}
+
+.main1_img{
+    width: 100%;
+    transition: all 1.1s;
+    background-size: cover;
+}
+
+.main1_img:hover{
+    transform: scale(1.1);
+}
+
+.main1_title{
+    margin: 30px 20px;
+    color: var(--title-color);
+    font-size: 21px;
+}
+.main1_title:hover{
+    color: var(--text-color);
+}
+.main1_description{
+    color: #757575;
+    width: 250px;
+    height: 100px;
+    font-size: 17px;
+    margin: 0 20px
+}
+.main_2 {
+    margin-top: 70px;
+    width: 320px;
+    height: 380px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-right: 50px;
+    margin-bottom: 50px;
+    transition:  height   0.8s;
+    position: relative;
+	overflow: hidden;
+}
+
+.main_2_icons{
+    font-size: 50px;
+    color: var(--text-color);
+    margin-left: 30px;
+    transition: color 3s;
+    padding-top: 20px;
+}
+.main_2_icons:hover {
+    color: var(--secound-bg-color);
+    font-size: 51px;
+}
+.main_2_title{
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+ .main_2_text{
+    margin-left: 30px;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 30px;
+    width: 280px;
+    color: var(--content-color);
+}
+
+.main_2:hover {
+    background-color: var(--secound-bg-color);
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    visibility: visible;
+}
+.main_p{
+    height: auto;
+    width: auto;
+    background-image: url(../../assets/images/consult_new.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.text1 {
+    color: var(--secound-bg-color);
+}
+.accounting_server2{
+    padding-left: 10px;
+    height: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2.5px solid  ;
+    border-color: var(--secound-bg-color);
+    padding-left: 5px;
+    color: white;
+}
+.accounting_server_text2{
+    color: var(--secound-bg-color);
+    font-size: 20px;
+    margin-left: 150px;
+    width: 800px;
+    text-align: right;
+}
+.main4_datatime{    
+    border-left: 2px solid;
+    border-color: #427ff0;
+    height: 20px;
+    color: var(--content-color);
+    font-size: 17px;
+    padding-left: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+@media (max-width:1700px) {
+    .main_title{
+        margin-top: 10rem;
+    }
+}
+@media (max-width:1600px) {
+    .main_title{
+        margin-top: 12rem;
+    }
+}
+@media (max-width:1200px) {
+    .accounting_text{
+         display: none;
+    }
+    .main_title{
+        margin-top: 22rem;
+    }
+}

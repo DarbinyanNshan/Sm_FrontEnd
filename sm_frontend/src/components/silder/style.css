@@ -1,0 +1,86 @@
+
+.service_img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--secound-bg-color);
+}
+
+.service_img>img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    filter: brightness(0.4);
+}
+
+.service_title {
+    padding: 2rem;
+    margin-left: 4rem;
+}
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem;
+}
+
+.service-content{
+    height: auto;
+    width: 350px;
+    border: 1px solid;
+    border-color: #5a5a5a1c;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.service-img{
+    width: 100%;
+    height: 25vh;
+    transition: all 1.1s;
+    background-size: cover;
+}
+
+.service-img:hover{
+    transform: scale(1.1);
+}
+.service-tit{
+    text-align: left;
+    height: 3rem;
+    width: auto;
+    background-color: var(--text-color);
+    margin-top: -1rem;
+    position: relative;
+}
+
+.service-title{
+    color: var(--secound-bg-color);
+    font-size: 21px;
+    padding: 1rem;
+    transition: all 1.1s;
+}
+
+.service-description{
+    color: #757575;
+    width: 270px;
+    height: auto;
+    font-size: 17px;
+    margin: 2rem 1rem;
+}
+
+.slick-next{
+    display: none !important;
+}
+
+.slick-dots li button{
+    display: none !important;
+}
