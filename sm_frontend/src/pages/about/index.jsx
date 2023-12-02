@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import "./style.css";
 
-import about_img from "../../assets/images/about_img.jpg";
-import abouts_img from "../../assets/images/about_vde.jpg";
+import about_img_1 from "../../assets/images/about_img_1.jpg";
+import about_img_2 from "../../assets/images/about_img_2.jpg";
+
+import { FaCheckSquare } from "react-icons/fa";
+
 
 export const About = () => {
 
@@ -20,48 +23,37 @@ export const About = () => {
                     counters[index] += 1;
                     number.innerHTML = counters[index];
                 }
-            }, 30)
+            }, 50)
         })
     }, []);
 
 
     return <>
-
-        <div className="about-img">
-            <img src={about_img} alt="" />
-            <h1 className="about-text">About Us</h1>
-        </div>
+        <div className="about-img"></div>
         <div className="about-section">
             <div className="about">
-                <div className="about-us">
-                    <img src={abouts_img}
-                        alt="" />
-                </div>
                 <div className="about-contant">
                     <h2 className="about-itle">
-                        We are Consulting
+                        Մեր Մասին
                     </h2>
                     <p className="about-content-text">
-                        orem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus id lectus quis dui euismod consectetur. Pellentesque ac
-                        ante sollicitudin, tincidunt nulla in, bibendu
-                        morem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus id lectus quis dui euismod consectetur. Pellentesque ac
-                        ante sollicitudin, tincidunt nulla in, bibendum
+                        Մեր գլխավոր առաքելությունն ու նպատակն է մատուցել հաճախորդներին պրոֆեսիոնալ հաշվապահական ծառայություններ,
+                        որոնք կօգնեն խուսափել ֆինանսական, հարկային և կառավարչական հաշվառման խնդիրներից`
+                        երաշխավորելով բիզնեսի հաջողությունն ու առաջխաղացումը։
                     </p>
                     <div className="numbers">
                         <div className="about_number">
                             <div className="number" data-num="6">
                             </div>
-                            <div className="language-text" >Years of experience</div>
+                            <div className="language-text" >Տարիների փորձ</div>
                         </div>
                         <div className="about-number">
                             <div className="number-content">
-                                <div className="number" data-num="95">
+                                <div className="number" data-num="75">
                                 </div>
                                 <p>K</p>
                             </div>
-                            <div className="language-text" >Happy Customers</div>
+                            <div className="language-text" >Երջանիկ Հաճախորդներ</div>
                         </div>
                         <div className="about-number">
                             <div className="number-content">
@@ -69,9 +61,31 @@ export const About = () => {
                                 </div>
                                 <p>%</p>
                             </div>
-                            <div className="language-text" >Satisfaction</div>
+                            <div className="language-text">Գոհունակություն</div>
                         </div>
                     </div>
+                </div>
+                <div className="about-us">
+                    <img src={about_img_1}
+                        alt="" />
+                </div>
+            </div>
+            <div className="about">
+                <div className="about-us">
+                    <img src={about_img_2}
+                        alt="" />
+                </div>
+                <div className="about-contant">
+                    <h2 className="about-itle">
+                        Ինչու՞ դիմել SM Consulting ընկերությանը
+                    </h2>
+                    <p className="about-content-text">
+                       <FaCheckSquare className="about_icon"/>Մենք առաջարկում ենք ծառայությունների լայն ընտրություն, միաժամանակ ապահովելով բարձր որակ:<br/>
+                       <FaCheckSquare className="about_icon"/>  Մեզ մոտ բոլոր մասնագետները և՛ փորձառու են, և՛ երիտասարդ:<br/>
+                       <FaCheckSquare className="about_icon"/>  Այստեղ կարևորվում է հաճախորդի հանդեպ պարտաճանաչ վերաբերմունքն ու անհատական մոտեցումը:<br/>
+                       <FaCheckSquare className="about_icon"/> Մենք կարևորում ենք մեր գործի բոլոր մանրուքները:
+                    </p>
+
                 </div>
             </div>
         </div>

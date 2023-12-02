@@ -15,17 +15,17 @@ export const Home = () => {
    
     return <>
         <div className="home">
-            <img src={home_img} alt="" />
+                <img src={home_img} alt="" />
             <div className="home-conten">
-                <h3> CONSULTING FIRM</h3>
+                <h3> ԽՈՐՀՐԴԱՏՎԱԿԱՆ ԸՆԿԵՐՈՒԹՅՈՒՆ</h3>
                 <div className="content">
                     <div className="text-animate">
-                        <h1>Welcome to the<span>  SM Consulting Office  </span></h1>
+                        <h1>Բարի Գալուստ<span>  SM Consulting ընկերության պաշտոնական էջ</span></h1>
                     </div>
-                    <p>SM Consulting office will help you to make your business faster
-                        and more accurate in all accounting operations.</p>
+                    <p>SM Consulting ընկերությունը կօգնի Ձեր դարձնել Ձեր բիզնեսն ավելի
+                         արագ և ճշգրիտ բոլոր հաշվապահական գործառնություններում</p>
                 </div>
-                <button onClick={onSubmit}>READ  ABOUT  US</button>
+                <button onClick={onSubmit}>Մեր Մասին</button>
             </div>
         </div>
         <Main/>

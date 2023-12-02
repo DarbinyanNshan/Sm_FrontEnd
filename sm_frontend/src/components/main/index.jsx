@@ -20,18 +20,18 @@ export const Main = () => {
 
     const main = [{
         img: Img_1,
-        title: 'Accounting',
-        description: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.',
+        title: 'Բիզնեսի վերահսկողական միջոցների ներդրում',
+        description: 'Բիզնես վերահսկողության իրականացումը առանցքային է ռիսկերի նվազեցման և կանոնակարգային համապատասխանության համար՝ ամրապնդելով դիմացկուն և լավ կառավարվող կազմակերպության հիմքը: Այս միջոցառումները համակարգված կերպով բարձրացնում են գործառնական ամբողջականությունը և խթանում հաշվետվողականության մշակույթը:',
     },
     {
         img: Img_2,
-        title: 'Payroll',
-        description: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.',
+        title: 'Հարկային ստուգումների ուղեկցում',
+        description: 'Ուղեկցող հարկային ստուգումները ներառում են ֆինանսական գրառումների ուսումնասիրության ընթացքում համակողմանի աջակցություն: Այս պրոակտիվ մոտեցումը ներառում է թափանցիկ հաղորդակցություն, մանրակրկիտ փաստաթղթեր և ռազմավարական ներկայացուցչություն՝ ապահովելու սահուն և համապատասխան աուդիտի գործընթաց:',
     },
     {
         img: Img_3,
-        title: 'Financial Services',
-        description: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.',
+        title: 'Հաշվապահական բազայի վերականգնում',
+        description: 'Հաշվապահական հաշվառման բազայի վերականգնումը անսպասելի իրադարձությունից հետո ֆինանսական տվյալների ամբողջականության վերականգնման մանրակրկիտ գործընթացն է: Սա ներառում է տվյալների համակարգված ստուգում, կրկնօրինակի վերականգնում և մանրակրկիտ վավերացում՝ ճշգրիտ ֆինանսական գրառումները վերականգնելու համար:',
     }
     ];
 
@@ -58,12 +58,12 @@ export const Main = () => {
         <div className="main_title">
             <div className="accounting_server">
                 <p>
-                    Consulting Services
+                Հաշվապահական խորհրդատվություն
                 </p>
             </div>
             <div className="accounting_text">
-                Այստեղ «SM-Consulting»-ում մենք առաջարկում ենք հաշվապահական ծառայությունների ամբողջական փաթեթ Հայաստանի ընկ
-                երություններին և անհատներին:
+            Այստեղ SM-Consulting-ում մենք առաջարկում ենք հաշվապահական ծառայությունների ամբողջական փաթեթ ՀՀ-ն
+                         ընկերություններին և անհատներին:
             </div>
         </div>
         <div className="main">
@@ -83,13 +83,10 @@ export const Main = () => {
         </div>
         <div className="main_p">
                 <div className="main_title">
-                    <div className="accounting_server">
+                    <div className="accounting_server main2">
                         <p>
-                            Accounting Services
+                        Հաշվապահական խորհրդատվություն՝ պրոֆեսիոնալների կողմից
                         </p>
-                    </div>
-                    <div className="accounting_text text1">
-                        Այստեղ «SM-Consulting»-ում մենք առաջարկում ենք հաշվապահական ծառայությունների ամբողջական փաթեթ Հայաստանի ընկերություններին և անհատներին:
                     </div>
             </div>
             <div className="main">
@@ -98,7 +95,7 @@ export const Main = () => {
                         <div className=" main_2_icons" ><HiOutlineDesktopComputer /></div>
                         <div className=" main_2_title" >Հաշվապահական ծառայություններ</div>
                         <div className=" main_2_text" >
-                            «SM-Accounting» ՍՊ ընկերության որակավորված հաշվապահները կօգնեն
+                            SM Consulting ընկերության որակավորված հաշվապահները կօգնեն
                             Ձեր նորաստեղծ կամ կայացած ընկերությանը ներդնել հաշվապահական ավտոմատացված համակարգ,
                             վարել ֆինանսական և հարկային հաշվառում՝ հաշվապահական հաշվառման, ֆինանսական հաշվետվությունների
                             միջազգային ստանդարտներին և հարկային օրենսգրքին համապատասխան։
@@ -111,7 +108,7 @@ export const Main = () => {
                         <div className="main_2_icons" ><BiCodeAlt /></div>
                         <div className="main_2_title" >Հարկային խորհրդատվություն</div>
                         <div className="main_2_text" >
-                            «SM-Accounting» ՍՊ ընկերության փորձառու և ճկուն հաշվապահները հնարավորություն կտան Ձեզ քայլել
+                            SM Consulting ընկերության փորձառու և ճկուն հաշվապահները հնարավորություն կտան ձեզ քայլել
                             Հարկային օրենսգրքի ու դրա հետ կապված կարգավորումների փոփոխություններին զուգընթաց,
                             կիրականացնեն Ձեր ընկերության հարկային ռազմավարության պլանավորում, հարկային
                             ուսումնասիրություն և ռիսկերի կառավարում։

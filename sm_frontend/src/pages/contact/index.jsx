@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import "./style.css"
 
-import contact_img from "../../assets/images/contact_img.jpg"
-
 import { FaHome } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
@@ -13,7 +11,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const ContactUs = () => {
-
 
     const form = useRef("");
 
@@ -53,19 +50,18 @@ export const ContactUs = () => {
 
     return <>
         <div className="contact_img">
-            <img src={contact_img} alt="" />
-            <h1 className="contact_text">Contact Us</h1>
+            
         </div>
         <section className="contact" >
             <form className="contact_form"
                 ref={form}
                 onSubmit={sendEmail}>
-                <h2 className="contact_title" >Send Us a Message</h2>
+                <h2 className="contact_title" >Ուղարկեք մեզ հաղորդագրություն</h2>
                 <div className="input-box">
                     <div className="input-field">
                         <input type="text"
                             name="user_name"
-                            placeholder="Your Name"
+                            placeholder="Ձեր Անունը"
                             required
                         />
                         <span className="focus"></span>
@@ -73,14 +69,14 @@ export const ContactUs = () => {
                     <div className="input-field">
                         <input type="number"
                             name="user_number"
-                            placeholder="Phone Number"
+                            placeholder="Հեռախոսահամար"
                             required
                         />
                         <span className="focus"></span>
                     </div>
                     <div className="input-field" >
                         <input type="email"
-                            placeholder="Email Addres"
+                            placeholder="Էլ․Հասցե"
                             name="user_email"
                             required />
                         <span className="focus"></span>
@@ -92,7 +88,7 @@ export const ContactUs = () => {
                         name="message"
                         cols="30"
                         rows="10"
-                        placeholder="Your Message"
+                        placeholder="Ձեր Հախորդագրությունը"
                         required
                     />
                     <span className="focus"></span>
@@ -102,7 +98,7 @@ export const ContactUs = () => {
                     <button
                         type="submit"
                         className="contact_btn">
-                        Send Mail
+                        Ուղարկել
                     </button>
                 </div>
                 <ToastContainer
@@ -121,7 +117,7 @@ export const ContactUs = () => {
             </form>
 
             <div className="contact_info">
-                <h2 >Contact Info</h2>
+                <h2 >Կոնտակտային տվյալները</h2>
                 <div className="contact_icon home"><FaHome /> <span>ք. Երևան, Դավիթ Անհաղթ 11/6</span></div>
                 <div className="contact_icon phone"><FaPhoneAlt /><span>+374 (93) 888 834</span></div>
                 <div className="contact_icon maill"><HiMail /><span>info@smconsulting.am</span></div>

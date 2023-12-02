@@ -3,11 +3,17 @@
 }
 
 .about-img {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.5rem;
-    color: var(--secound-bg-color);
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-attachment: fixed;
+    filter: brightness(0.6);
+    background-image: url(../../assets/images/about_img.jpg);
 }
 
 .about-img>img {
@@ -42,11 +48,12 @@
 }
 
 .about-us>img {
-    height: 18rem;
-    width: auto;
+    height: 20rem;
+    width: 25rem;
     margin: 3rem;
-    filter: brightness(0.6);
+    filter: brightness(0.9);
     border-radius: 5%;
+    position:static;
 }
 
 .about-title {
@@ -134,7 +141,9 @@
     width: 20rem;
     margin: 1rem;
 }
-
+.about_icon{
+    color: #52d76d;
+}
 @media (max-width: 1300px) {
     .about-us>img {
         height: 30rem;

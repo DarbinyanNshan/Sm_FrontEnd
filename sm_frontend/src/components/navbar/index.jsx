@@ -29,10 +29,11 @@ export const NavBar = () => {
                 <img src={logo} alt="*" />
             </div>
             <nav className={`nav-links ${isOpen && "open"}`}>
-                <NavLink to="/" >Home</NavLink>
-                <NavLink to="/about">About Us</NavLink>
-                <NavLink to="/services">Services </NavLink>
-                <NavLink to="/contact">Contact Us </NavLink>
+                <NavLink to="/" >Գլխաոր</NavLink>
+                <NavLink to="/about">Մեր Մասին</NavLink>
+                <NavLink to="/services">Ծառայություներ </NavLink>
+                <NavLink to="/contact">Կապ </NavLink>
+                <NavLink to="/news">Նորություներ </NavLink>
             </nav>
             <div className={`new-toggle ${isOpen && "open"}`}
                 onClick={() => setIsOpen(!isOpen)}>
