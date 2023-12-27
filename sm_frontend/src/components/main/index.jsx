@@ -5,18 +5,24 @@ import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { BiCodeAlt } from "react-icons/bi";
 import { BsRocketTakeoff } from "react-icons/bs";
 
+import { useNavigate } from "react-router-dom";
 
 import Img_1 from "../../assets/images/main_img/service_1.jpg"
 import Img_2 from "../../assets/images/main_img/service_2.jpg"
 import Img_3 from "../../assets/images/main_img/service_3.jpg"
-import Img_4 from "../../assets/images/main_img/news_1.jpg"
-import Img_5 from "../../assets/images/main_img/news_2.jpg"
-import Img_6 from "../../assets/images/main_img/news_3.jpg"
+import main_about from "../../assets/images/main_about.jpg"
+
+import { FcSearch } from "react-icons/fc";
+import { FaHandPointDown } from "react-icons/fa";
+
+
 
 
 
 
 export const Main = () => {
+
+    const navigate = useNavigate()
 
     const main = [{
         img: Img_1,
@@ -35,66 +41,51 @@ export const Main = () => {
     }
     ];
 
-    const main_3 = [{
-        img: Img_4,
-        title: 'Introducing Gaap WordPress Accounting Theme',
-        data_time: '24th January 2003',
-        description: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.',
-    },
-    {
-        img: Img_5,
-        title: 'The New Accounting Tax Laws Explained In Full',
-        data_time: '24th January 2013',
-        description: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.',
-    },
-    {
-        img: Img_6,
-        title: '10 Reasons To Hire Accountancy Accountants',
-        data_time: '24th January 2023',
-        description: 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.',
+    const ServiceItem = ({ img, title, description }) => (
+        <div className="main_1">
+            <img src={img} alt="" className="main1_img" />
+            <h2 className="main1_title">{title}</h2>
+            <p className="main1_description">{description}</p>
+        </div>
+    );
+    const onClick = () => {
+        navigate('/services');
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
     }
-    ];
     return <div className='main_content'>
         <div className="main_title">
             <div className="accounting_server">
                 <p>
-                Հաշվապահական խորհրդատվություն
+                    Հաշվապահական խորհրդատվություն
                 </p>
             </div>
             <div className="accounting_text">
-            Այստեղ SM-Consulting-ում մենք առաջարկում ենք հաշվապահական ծառայությունների ամբողջական փաթեթ ՀՀ-ն
-                         ընկերություններին և անհատներին:
+                Այստեղ SM-Consulting-ում մենք առաջարկում ենք հաշվապահական ծառայությունների ամբողջական փաթեթ ՀՀ-ն
+                ընկերություններին և անհատներին:
             </div>
         </div>
         <div className="main">
-            {main.map((main) => (
-                <div>
-                    <div className="main_1">
-                        <img src={main.img}
-                            alt=""
-                            className="main1_img"
-                        />
-                        <h2 className="main1_title">{main.title}</h2>
-                        <p className="main1_description">{main.description}</p>
-                        </div>
-                        
-                </div>
+            {main.map((item, index) => (
+                <ServiceItem key={index} {...item} />
             ))}
         </div>
         <div className="main_p">
-                <div className="main_title">
-                    <div className="accounting_server main2">
-                        <p>
+            <div className="main_title">
+                <div className="accounting_server main_server">
+                    <p>
                         Հաշվապահական խորհրդատվություն՝ պրոֆեսիոնալների կողմից
-                        </p>
-                    </div>
+                    </p>
+                </div>
             </div>
             <div className="main">
                 <div>
-                    <div className="main_2">
-                        <div className=" main_2_icons" ><HiOutlineDesktopComputer /></div>
-                        <div className=" main_2_title" >Հաշվապահական ծառայություններ</div>
-                        <div className=" main_2_text" >
+                    <div className="main2">
+                        <div className=" main2_icons" ><HiOutlineDesktopComputer /></div>
+                        <div className=" main2_title" >Հաշվապահական ծառայություններ</div>
+                        <div className=" main2_text" >
                             SM Consulting ընկերության որակավորված հաշվապահները կօգնեն
                             Ձեր նորաստեղծ կամ կայացած ընկերությանը ներդնել հաշվապահական ավտոմատացված համակարգ,
                             վարել ֆինանսական և հարկային հաշվառում՝ հաշվապահական հաշվառման, ֆինանսական հաշվետվությունների
@@ -104,10 +95,10 @@ export const Main = () => {
                 </div>
 
                 <div>
-                    <div className="main_2">
-                        <div className="main_2_icons" ><BiCodeAlt /></div>
-                        <div className="main_2_title" >Հարկային խորհրդատվություն</div>
-                        <div className="main_2_text" >
+                    <div className="main2">
+                        <div className="main2_icons" ><BiCodeAlt /></div>
+                        <div className="main2_title" >Հարկային խորհրդատվություն</div>
+                        <div className="main2_text" >
                             SM Consulting ընկերության փորձառու և ճկուն հաշվապահները հնարավորություն կտան ձեզ քայլել
                             Հարկային օրենսգրքի ու դրա հետ կապված կարգավորումների փոփոխություններին զուգընթաց,
                             կիրականացնեն Ձեր ընկերության հարկային ռազմավարության պլանավորում, հարկային
@@ -117,10 +108,10 @@ export const Main = () => {
                 </div>
 
                 <div>
-                    <div className="main_2">
-                        <div className="main_2_icons" ><BsRocketTakeoff /></div>
-                        <div className="main_2_title" >Կադրային գործավարություն</div>
-                        <div className="main_2_text" >
+                    <div className="main2">
+                        <div className="main2_icons" ><BsRocketTakeoff /></div>
+                        <div className="main2_title" >Կադրային գործավարություն</div>
+                        <div className="main2_text" >
                             Ունենալով գրագետ կազմակերպված կադրային գործավարություն`կունենաք իրավաբանական
                             պաշտպանվածություն աշխատանքային վեճերի ժամանակ, կկարողանաք պատշաճ ներկայանալ աշխատանքային օրենսդրության
                             նորմերի շրջանակներում պետական մարմինների կողմից անցկացվող ստուգումներին:
@@ -129,32 +120,29 @@ export const Main = () => {
                 </div>
             </div>
         </div>
-
-        <div className="main_title">
-            <div className="accounting_server">
-                <p>
-                    Recent News
+        <div className="main_about">
+            <div className="main_about_img">
+                <img src={main_about}
+                    alt="" />
+            </div>
+            <div className="main_about_contant">
+                <h2 className="main_about_title">
+                    SM Consulting-ի որակավորված հաշվապահները կօգնեն Ձեր ընկերությանը ներդնել հաշվապահական ավտոմատացված համակարգ,
+                    վարել գրագետ ֆինանսական և հարկային հաշվառում՝ միջազգային ստանդարտների և հարկային օրենսգրքի համաձայն
+                </h2>
+                <p className="main_about_text">
+                    Մեր ծառայություններն են <FaHandPointDown className="main_about_down" /><br />
+                    <FcSearch className="main_about_icon" />Հարկային հաշվառման պլանավորում<br />
+                    <FcSearch className="main_about_icon" />Հաշվապահական քաղաքականության մշակում՝ Ձեր կազմակերպության առանձնահատկություններին համաձայն<br />
+                    <FcSearch className="main_about_icon" />Բիզնես ռիսկերի վերլուծություն<br />
+                    <FcSearch className="main_about_icon" />Բիզնեսի վերահսկողական միջոցների ներդրում<br />
+                    <FcSearch className="main_about_icon" /> Հաշվապահական հաշվառման և հարակից բիզնես պրոցեսների ավտոմատացում<br />
+                    <FcSearch className="main_about_icon" />Կազմակերպության հիմնադիրների, կառավարչական անձնակազմի պահանջներին համապատասխան՝ ֆինանսական հաշվետվությունների պատրաստում։<br />
                 </p>
+                <div className="main_about_btn">
+                    <button onClick={onClick}>Իմանալ Ավելին</button>
+                </div>
             </div>
         </div>
-        <div className="main">
-
-            {main_3.map((main_3) => (
-                <div>
-                    <div className="main_1">
-                        <img src={main_3.img}
-                            alt="/"
-                            className="main1_img"
-                        />
-                        <h2 className="main1_title">{main_3.title}</h2>
-                        <p className="main4_datatime">{main_3.data_time}</p>
-                        <p className="main1_description">{main_3.description}</p>
-                    </div>
-
-                </div>
-            ))}
-        </div>
-
-
     </div>
 }

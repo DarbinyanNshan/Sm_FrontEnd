@@ -16,7 +16,7 @@ export const Home = () => {
     return <>
         <div className="home">
                 <img src={home_img} alt="" />
-            <div className="home-conten">
+            <div className="home-content">
                 <h3> ԽՈՐՀՐԴԱՏՎԱԿԱՆ ԸՆԿԵՐՈՒԹՅՈՒՆ</h3>
                 <div className="content">
                     <div className="text-animate">

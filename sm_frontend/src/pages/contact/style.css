@@ -13,25 +13,6 @@
     
 }
 
-/* .contact_img>img {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    background-attachment: fixed;
-    filter: brightness(0.6);
-} */
-
-.contact_text {
-    padding: 2rem;
-    margin-left: 4rem;
-}
-
 .input-box {
     display: flex;
     align-items: center;

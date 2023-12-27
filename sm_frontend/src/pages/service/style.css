@@ -15,11 +15,12 @@
     filter: brightness(0.4);
     background-image: url(../../assets/images/service_img.jpg);
 }
-.service{
+
+.service {
     margin: 10rem;
 }
 
-.service_img1{
+.service_img1 {
     background-image: url(../../assets/images/service_img_1.jpg);
     height: 20rem;
     object-fit: cover;
@@ -27,70 +28,96 @@
     background-repeat: no-repeat;
 }
 
-.service>h1{
+.service>h1 {
     font-size: 2.3rem;
     margin: 2rem 0;
 }
 
-.service>h2{
+.service>h2 {
     font-size: 1.8rem;
-    margin:2rem 0;
+    margin: 2rem 0;
 }
-.service>p{
+
+.service>p {
     color: var(--content-color);
     font-size: 1.2rem;
     margin-top: 1rem;
 }
-.service>h3{
-    margin:1rem 0;
+
+.service>h3 {
     font-size: 1.4rem;
     color: var(--title-color);
+    cursor: pointer;
+    margin: 1rem 0;
 }
-.service_1>p{
+
+.service>h3:hover {
+    color: var(--text-color);
+}
+
+.service_1>p {
     color: var(--content-color);
     font-size: 1.2rem;
     margin-top: 1rem;
 }
-.service_1>h3{
-    margin:1rem 0;
+
+.service_1>h3 {
+    margin: 1rem 0;
     font-size: 1.4rem;
     color: var(--title-color);
 }
-.service_2{
+
+.service_2 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.service_2_contant>h1{
+.service_2_contant>h1 {
     font-size: 2.3rem;
     margin: 1.5rem 0;
+    cursor: pointer;
 }
 
-.service_2_contant>h3{
-    margin:0.5rem 0;
-    font-size: 1.4rem;
+.service_2_contant>h1:hover {
+    color: var(--text-color);
+}
+
+.service_2_contant>h1:hover {
+    color: var(--text-color);
+}
+
+.service_2_contant>h3 {
+    margin: 0.5rem 0;
+    font-size: 2rem;
     color: var(--title-color);
 }
-.service_2_contant>p{
+
+.service_2_contant>h3:hover {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.service_2_contant>p {
     color: var(--content-color);
     font-size: 1.2rem;
-    margin-top: 0.5rem;
 }
-.service_2>img{
-    height: 20rem;
-    width: 30rem;
-    margin: 4rem 0; 
+
+.service_2>img {
+    height: 25rem;
+    width: 35rem;
     border-radius: 10%;
 }
+
 @media (max-width:1180px) {
-    .service_2{
+    .service_2 {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
-    .service_2>img{
+
+    .service_2>img {
         height: 20rem;
         width: 30rem;
     }
