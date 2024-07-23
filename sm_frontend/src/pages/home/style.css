@@ -139,10 +139,6 @@
 }
 
 @media (max-width:671px) {
-    .home-content>h3 {
-        font-size: 1.3rem;
-    }
-
     .text-animate {
         width: 400px;
     }

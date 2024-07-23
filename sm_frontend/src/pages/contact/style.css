@@ -10,7 +10,7 @@
     z-index: -1;
     background-attachment: fixed;
     filter: brightness(0.6);
-    
+
 }
 
 .input-box {
@@ -23,7 +23,7 @@
 
 .contact {
     display: flex;
-    justify-content: space-around;  
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 10rem;
@@ -61,7 +61,7 @@
     color: var(--secound-bg-color);
     background: transparent;
     border-radius: .3rem;
-    border: .2rem solid rgb(246, 246, 246);
+    border: .1rem solid rgb(246, 246, 246);
     cursor: pointer;
 }
 
@@ -102,7 +102,7 @@
     cursor: pointer;
 }
 
-.contact_btn{
+.contact_btn {
     height: 3rem;
     width: 10rem;
     font-size: 1rem;
@@ -110,43 +110,45 @@
     color: var(--secound-bg-color);
     background-color: var(--text-color);
     cursor: pointer;
-    transition:  1s;
+    transition: 1s;
 }
 
-.contact_btn:hover{
+.contact_btn:hover {
     color: var(--text-color);
     background-color: var(--secound-bg-color);
     border-color: var(--text-color);
 }
 
-.contact_info{
-    height:70vh;
+.contact_info {
+    height: 70vh;
 }
 
-.contact_info>h2{
+.contact_info>h2 {
     margin: 1rem;
     font-size: 2rem;
     color: var(--title-color);
 }
 
-.contact_icon{
+.contact_icon {
     font-size: 1.3rem;
-    color: var( --content-color);
+    color: var(--content-color);
     padding: 1rem;
 }
-.contact_icon>span{
+
+.contact_icon>span {
     font-size: 1.3rem;
     padding-left: 1rem;
-    color: var( --content-color);
+    color: var(--content-color);
     cursor: help;
 }
 
-.contact_map>iframe{
+.contact_map>iframe {
     width: 100%;
 }
 
 @media (max-width:800px) {
-    .contact{
+    .contact {
         margin: 1rem;
+        margin-top: 12rem;
     }
 }

@@ -40,7 +40,7 @@
 }
 
 .main_1 {
-    height: 460px;
+    height: 520px;
     width: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 50px 20px;
@@ -80,7 +80,7 @@
 
 .main_server {
     font-size: 1.2rem;
-    color: var(--second-bg-color);  
+    color: white;  
 }
 
 .main2 {
@@ -267,7 +267,6 @@
     .main_about {
         margin: 1rem;
     }
-
     .main_about_img > img {
         height: 20rem;
         width: 30rem;
@@ -290,6 +289,9 @@
         text-align: left;
     }
 
+    .main2_section{
+          margin-left: 3rem;
+    }
     .main_about_img > img {
         height: 15rem;
         width: 20rem;
@@ -323,6 +325,10 @@
     .main_about_img > img {
         height: 10rem;
         width: 15rem;
+    }
+    .main2 {
+        margin-top: 70px;
+        width: 280px;
     }
 
     .main_about_text {

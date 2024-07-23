@@ -86,14 +86,13 @@
      width: 8.75rem;
      height: 4.8rem;
      font-weight: 600;
-     margin: 1.5rem 2rem;
+     margin: 1.5rem 0;
  }
 
  .nav-links a {
      margin-left: 2.5rem;
      text-decoration: none;
-     color: var(--secound-bg-color);
-     ;
+     color: var(--secound-bg-color) ;
      font-size: 1.4rem;
      cursor: pointer;
  }

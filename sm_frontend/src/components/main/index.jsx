@@ -63,8 +63,8 @@ export const Main = () => {
                 </p>
             </div>
             <div className="accounting_text">
-                Այստեղ SM-Consulting-ում մենք առաջարկում ենք հաշվապահական ծառայությունների ամբողջական փաթեթ ՀՀ-ն
-                ընկերություններին և անհատներին:
+                SM-Consulting-ը  առաջարկում է հաշվապահական ծառայությունների ամբողջական փաթեթ ՀՀ
+                 և օտարերկրյա կազմակերպություններին և անհատներին:
             </div>
         </div>
         <div className="main">
@@ -81,12 +81,12 @@ export const Main = () => {
                 </div>
             </div>
             <div className="main">
-                <div>
+                <div className="main2_section">
                     <div className="main2">
                         <div className=" main2_icons" ><HiOutlineDesktopComputer /></div>
                         <div className=" main2_title" >Հաշվապահական ծառայություններ</div>
                         <div className=" main2_text" >
-                            SM Consulting ընկերության որակավորված հաշվապահները կօգնեն
+                            SM Consulting ընկերության որակյալ հաշվապահները կօգնեն
                             Ձեր նորաստեղծ կամ կայացած ընկերությանը ներդնել հաշվապահական ավտոմատացված համակարգ,
                             վարել ֆինանսական և հարկային հաշվառում՝ հաշվապահական հաշվառման, ֆինանսական հաշվետվությունների
                             միջազգային ստանդարտներին և հարկային օրենսգրքին համապատասխան։
@@ -94,7 +94,7 @@ export const Main = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="main2_section">
                     <div className="main2">
                         <div className="main2_icons" ><BiCodeAlt /></div>
                         <div className="main2_title" >Հարկային խորհրդատվություն</div>
@@ -107,7 +107,7 @@ export const Main = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className="main2_section">
                     <div className="main2">
                         <div className="main2_icons" ><BsRocketTakeoff /></div>
                         <div className="main2_title" >Կադրային գործավարություն</div>

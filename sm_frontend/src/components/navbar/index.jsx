@@ -10,7 +10,6 @@ import { GoMail } from "react-icons/go"
 import { FiPhoneCall } from "react-icons/fi"
 
 export const NavBar = () => {
-
     const [isOpen, setIsOpen] = useState(false)
 
     return <>
@@ -18,7 +17,7 @@ export const NavBar = () => {
             <div className="contact-data">
                 <p className="time"> <span><BiTimeFive /></span>Երկ. - Ուրբ. 09:00-18:00 </p>
                 <p className="mail"><span><GoMail /></span> info@smconsulting.am</p>
-                <p className="phone-number"><span><FiPhoneCall /></span>+374 (93) 888 834 </p>
+                <p className="phone-number"><span><FiPhoneCall /></span>+374 (94) 775 002 </p>
             </div>
             <div className="addres">
                 <p className="map-text"> <span><BiMap /></span> ք. Երևան, Դավիթ Անհաղթ 11/6</p>
@@ -29,10 +28,18 @@ export const NavBar = () => {
                 <img src={logo} alt="*" />
             </div>
             <nav className={`nav-links ${isOpen && "open"}`}>
-                <NavLink to="/" >Գլխավոր</NavLink>
-                <NavLink to="/about">Մեր Մասին</NavLink>
-                <NavLink to="/services">Ծառայություներ </NavLink>
-                <NavLink to="/contact">Կապ </NavLink>
+                <NavLink to="/" 
+                onClick={() => setIsOpen(!isOpen)}
+                >Գլխավոր</NavLink>
+                <NavLink to="/about"
+                onClick={() => setIsOpen(!isOpen)}
+                >Մեր Մասին</NavLink>
+                <NavLink to="/services"
+                onClick={() => setIsOpen(!isOpen)}
+                >Ծառայություներ </NavLink>
+                <NavLink to="/contact"
+                onClick={() => setIsOpen(!isOpen)}
+                >Կապ </NavLink>
             </nav>
             <div className={`new-toggle ${isOpen && "open"}`}
                 onClick={() => setIsOpen(!isOpen)}>

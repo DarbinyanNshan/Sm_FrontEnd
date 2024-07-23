@@ -29,7 +29,7 @@
 }
 
 .service>h1 {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     margin: 2rem 0;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .service>h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--title-color);
     cursor: pointer;
     margin: 1rem 0;
@@ -74,7 +74,7 @@
 }
 
 .service_2_contant>h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin: 1.5rem 0;
     cursor: pointer;
 }
@@ -120,5 +120,36 @@
     .service_2>img {
         height: 20rem;
         width: 30rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .service {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .service_2_contant{
+        margin: 0.2rem 4rem;
+        font-size: 1.5rem;
+    }
+
+    .service_2_contant>h1{
+        font-size: 1.5rem;
+    }
+    .service_2_contant>h3{
+        font-size: 1.5rem;
+    }
+    .service>h3{
+        font-size: 1.5rem
+       }
+    .service>h3{
+        font-size: 1.5rem;
+    }
+    .service_2>img{
+        height: 200px;
+        width: 300px;
     }
 }

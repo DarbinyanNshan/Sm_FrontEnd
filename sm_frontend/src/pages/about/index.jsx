@@ -42,16 +42,15 @@ export const About = () => {
                         երաշխավորելով բիզնեսի հաջողությունն ու առաջխաղացումը։
                     </p>
                     <div className="numbers">
-                        <div className="about_number">
+                        <div className="about-number">
                             <div className="number" data-num="6">
                             </div>
                             <div className="language-text" >Տարիների փորձ</div>
                         </div>
                         <div className="about-number">
                             <div className="number-content">
-                                <div className="number" data-num="75">
+                                <div className="number" data-num="200">
                                 </div>
-                                <p>K</p>
                             </div>
                             <div className="language-text" >Երջանիկ Հաճախորդներ</div>
                         </div>

@@ -115,11 +115,12 @@ export const ContactUs = () => {
                     theme="colored"
                 />
             </form>
+            
 
             <div className="contact_info">
                 <h2 >Կոնտակտային տվյալները</h2>
                 <div className="contact_icon home"><FaHome /> <span>ք. Երևան, Դավիթ Անհաղթ 11/6</span></div>
-                <div className="contact_icon phone"><FaPhoneAlt /><span>+374 (93) 888 834</span></div>
+                <div className="contact_icon phone"><FaPhoneAlt /><span>+374 (94) 775 002</span></div>
                 <div className="contact_icon maill"><HiMail /><span>info@smconsulting.am</span></div>
                 <div className="contact_icon time"><BiSolidTimeFive /><span>Երկ. - Ուրբ. 09:00-18:00 </span></div>
             </div>

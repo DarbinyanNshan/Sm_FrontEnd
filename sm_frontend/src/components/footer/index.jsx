@@ -74,7 +74,7 @@ export const Footer = () => {
                 Հասցե:<span> ք. Երևան, Դավիթ Անհաղթ 11/6</span>
               </p>
               <p>
-                Հեռ․:<span> +374 93 888 834</span>
+                Հեռ․:<span> +374 (94) 775 002</span>
               </p>
               <p>
                 Էլ․Հասցե:<span> info@smconsulting.am</span>
@@ -102,24 +102,24 @@ export const Footer = () => {
                   <BiLogoLinkedin />
                 </a>
               </div>
-              <div className="yt">
+              {/* <div className="yt">
                 <a href="#" aria-label="YouTube">
                   <AiFillYoutube />
                 </a>
-              </div>
+              </div> */}
               <div className="twit">
                 <a href="#" aria-label="Twitter">
                   <AiOutlineTwitter />
                 </a>
               </div>
             </div>
-            <div className="footer_logo">
+            {/* <div className="footer_logo">
               <img src={logo} alt="*" />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="footer_text">
-          <p> &copy; 2023 by Darbinyan </p>
+          {/* <p> &copy; 2023 by Darbinyan </p> */}
         </div>
       </>
     );
