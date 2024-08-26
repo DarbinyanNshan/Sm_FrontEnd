@@ -1,114 +1,86 @@
 import React, { useState } from "react";
-import "./style.css"
-
-import service_img_1 from "../../assets/images/service_img_1.jpg"
+import { useTranslation } from "react-i18next";
+import "./style.css";
 import { AiFillCaretRight } from "react-icons/ai";
-
+import { FaCaretDown } from "react-icons/fa";
 
 export const Service = () => {
-    const service_1 = [{
-        title: '1. Տվյալների հավաքագրումը',
-        description: 'Սկսեք հավաքելով համապատասխան ֆինանսական տվյալներ, ներառյալ գործարքները, անդորրագրերը, հաշիվ-ապրանքագրերը և այլ համապատասխան տեղեկություններ: Ապահովել տվյալների հավաքագրման ճշգրտությունը և ամբողջականությունը:',
-    },
-    {
-        title: '2. Գործարքի մուտքագրում',
-        description: 'Սիստեմատիկորեն գրանցեք ֆինանսական գործարքները: Ներառեք մանրամասներ, ինչպիսիք են ամսաթիվը, գումարը, ներգրավված հաշիվները և գործարքի տեսակը: Մուտքագրման համար օգտագործեք հաշվապահական ծրագրակազմ կամ ձեռնարկի մատյաններ:',
-    },
-    {
-        title: '3. Ամսագրի գրառումներ.',
-        description: 'Կազմել գործարքների գրառումները ամսագրի գրառումներում: Գործարքները դասակարգել հաշվապահական հաշվառման սկզբունքների հիման վրա, ներառյալ դեբետային և վարկային մուտքերը: Հստակության համար պահպանեք ժամանակագրական կարգը:',
-    },
-    {
-        title: '4. Ամսագրերի Տեղադրում',
-        description: 'Ամսագրի գրառումները տեղադրել համապատասխան մատյաններում: Թարմացրեք անհատական հաշիվները՝ արտացոլելու մնացորդների փոփոխությունները: Այս գործընթացը կազմակերպում է տվյալներ՝ հիմնված կոնկրետ հաշիվների վրա:',
-    },
-    {
-        title: '5. Փորձնական մնացորդ',
-        description: 'Պատրաստեք փորձնական հաշվեկշիռ՝ ամփոփելով մատյանների մնացորդները: Համոզվեք, որ ընդհանուր դեբետները հավասար են ընդհանուր վարկերին՝ ծառայելով որպես նախնական ստուգում հաշվապահական հաշվառման ճշգրտության համար:',
-    }];
+    const { t, i18n } = useTranslation();
+    const [activeSection, setActiveSection] = useState(null);
 
-    const [btn_1, setBtn_1] = useState(false)
-    const Change_1 = () => {
-        setBtn_1(!btn_1)
-    }
+    const toggleSection = (index) => {
+        setActiveSection(activeSection === index ? null : index);
+    };
 
-    const [btn_2, setBtn_2] = useState(false)
-    const Change_2 = () => {
-        setBtn_2(!btn_2)
-    }
+    const service_1 = [
+        { id: 1, title: t('service.service1.title1'), description: t('service.service1.description1') },
+        { id: 2, title: t('service.service1.title2'), description: t('service.service1.description2') },
+        { id: 3, title: t('service.service1.title3'), description: t('service.service1.description3') },
+        { id: 4, title: t('service.service1.title4'), description: t('service.service1.description4') },
+        { id: 5, title: t('service.service1.title5'), description: t('service.service1.description5') }
+    ];
+    const getImagePath = (imageName) => {
+        const lang = i18n.language;
+        return require(`../../assets/images/${lang}/${imageName}`);
+    };
 
-    const [btn_3, setBtn_3] = useState(false)
-    const Change_3 = () => {
-        setBtn_3(!btn_3)
-    }
-
-
-    const [btn_4, setBtn_4] = useState(false)
-    const Change_4 = () => {
-        setBtn_4(!btn_4)
-    }
-
-
-    const [btn_5, setBtn_5] = useState(false)
-    const Change_5 = () => {
-        setBtn_5(!btn_5)
-    }
-
-
-
-    return <>
-        <div className="service_img">
-        </div>
+    return (
         <div className="service">
+            <div className="service_img" />
             <div className="service_2">
-        
-                <div className="service_2_contant">
-                    <h1 onClick={Change_1}>Հաշվապահական հաշվառման և հարակից բիզնես պրոցեսների ավտոմատացում</h1><br />
-                    {btn_1 ? <p> <AiFillCaretRight />Հաշվապահական հաշվառման և հարակից բիզնես գործընթացների ավտոմատացումը փոխակերպող մոտեցում է,
-                        որն օգտագործում է տեխնոլոգիան՝ պարզեցնելու ֆինանսական գործառնությունները,
-                        բարձրացնել արդյունավետությունը և նվազեցնել ձեռքով աշխատանքի ծանրաբեռնվածությունը:</p> : null}
+                <div className="service_2_content">
+                    <h1 onClick={() => toggleSection(1)}>
+                        {t('service.title1')}
+                        {activeSection === 1 ? <FaCaretDown /> : <AiFillCaretRight />}
+                    </h1>
+                    <div className={`section-content ${activeSection === 1 ? "open" : ""}`}>
+                        <p>{t('service.description1')}</p>
+                    </div>
 
-                    <h3 onClick={Change_2}>Հաշվապահական հաշվառում</h3><br />
-                    {btn_2 ? <p><AiFillCaretRight />Հաշվապահությունը ձեռնարկության ֆինանսական գործարքների գրանցման, վերլուծության և մեկնաբանման
-                        համակարգված գործընթաց է: Այն ապահովում է էական պատկերացումներ ֆինանսական առողջության և կատարողականի
-                        րաբերյալ՝ օգնելով որոշումների կայացմանը: Ճշգրիտ հաշվառումն ապահովում է համապատասխանությունը կարգավորող
-                        ստանդարտներին և աջակցում է կայուն աճի ռազմավարական պլանավորմանը:</p> : null}
+                    <h1 onClick={() => toggleSection(2)}>
+                        {t('service.title2')}
+                        {activeSection === 2 ? <FaCaretDown /> : <AiFillCaretRight />}
+                    </h1>
+                    <div className={`section-content ${activeSection === 2 ? "open" : ""}`}>
+                        <p>{t('service.description2')}</p>
+                    </div>
 
-                    <h3 onClick={Change_3}>Հաշվետվություների Պատրաստում</h3><br />
-                    {btn_3 ? <p><AiFillCaretRight />Հաշվետվությունների պատրաստումը ներառում է ֆինանսական տվյալների սինթեզումը հակիրճ, տեղեկատվական փաստաթղթերի մեջ:
-                        Այս հաշվետվությունները ծառայում են որպես կառավարման որոշումների կայացման և կանոնակարգային համապատասխանության
-                        կարևոր գործիքներ։</p> : null}
+                    <h1 onClick={() => toggleSection(3)}>
+                        {t('service.title3')}
+                        {activeSection === 3 ? <FaCaretDown /> : <AiFillCaretRight />}
+                    </h1>
+                    <div className={`section-content ${activeSection === 3 ? "open" : ""}`}>
+                        <p>{t('service.description3')}</p>
+                    </div>
                 </div>
+                <img  src={getImagePath('service_img1.jpg')} alt="" />
+            </div>
 
-                <img src={service_img_1} alt="" />
-                </div>
-            <h3 onClick={Change_4} >Գործող օրենսդրական փոփոխությունների իրազերկում</h3><br />
-            {btn_4 ? <p>  Ներկայիս քաղաքական փոփոխությունների զինաթափումը ենթադրում է լարվածության թուլացում և դիվանագիտական երկխոսության խթանում։
-                Այն նպատակ ունի խթանել կայունությունը, խաղաղությունը և համագործակցությունը զարգացող քաղաքական լանդշաֆտների պայմաններում:
-                Այս գործընթացը հաճախ պահանջում է միջազգային համագործակցություն և խաղաղ միջոցներով հակամարտությունների կարգավորման հանձնառություն</p> : null}
+            <h3 onClick={() => toggleSection(4)}>
+                {t('service.title4')}
+                {activeSection === 4 ? <FaCaretDown /> : <AiFillCaretRight />}
+            </h3>
+            <div className={`section-content ${activeSection === 4 ? "open" : ""}`}>
+                <p>{t('service.description4')}</p>
+            </div>
 
-            <h3 onClick={Change_5}>Հարկային խորհրդատվություն</h3><br />
-            {btn_5 ? <p>Արագ փոփոխվող հարկային օրենսդրությունը, ինչպես նաև որոշ իրավական կարգավորումների մեկնաբանման բարդությունը, ընդհանուր առմամբ,
-                առաջացնում են փոփոխվող միջավայրին հարմարվելու բիզնեսի կարողությանը բնորոշ ռիսկեր: Մինչդեռ, բիզնեսի գործարքների և տարբեր
-                նախագծերի հարկային հետևանքների տեսանկյունից, հետաքննության և պլանավորման պահանջարկը աճում է `պայմանավորված այն փաստով,
-                որ հարկային օրենսդրությունն ու կանոնակարգերը անընդհատ փոխվում են, որի արդյունքում պետք է հետևողական լինել փոփոխությունների հետ
-                միասին:Ձեր բիզնեսի կարիքները բավարարելու համար Ռեալ Հաշվապահ ընկերությունը Հայաստանում առաջարկում է ձեզ հարկային խորհրդատվական
-                ծառայություններ ՝հարմարեցված ձեր բիզնեսի հատուկ կարիքները բավարարելու համար:</p> : null}
-            <h3>Հարկային հաշվառման պլանավորում</h3>
-            <p>Հաշվապահական հաշվարկները կազմում են ֆինանսական կառավարման հիմքը, որը հնարավորություն է տալիս ճշգրիտ հաշվառման, հաշվետվությունների
-                և որոշումների կայացմանը: Այս ուղեկցող բլոկային դիագրամը ուրվագծում է հաշվապահական հաշվառման գործընթացի հիմնական բաղադրիչների մի քանի կետ:</p>
-
-            {service_1.map((service_1) => (
-                <div className="service_1" key={service_1}>
-                    <h3>{service_1.title}</h3>
-                    <p>{service_1.description}</p>
+            <h3 onClick={() => toggleSection(5)}>
+                {t('service.title5')}
+                {activeSection === 5 ? <FaCaretDown /> : <AiFillCaretRight />}
+            </h3>
+            <div className={`section-content ${activeSection === 5 ? "open" : ""}`}>
+                <p>{t('service.description5')}</p>
+            </div>
+            <h1>{t('service.service1.title0')}</h1>
+             <p>{t('service.service1.description0')}</p>
+            {service_1.map(service => (
+                <div key={service.id} className="service_2_contant">
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
                 </div>
             ))}
-            <h1>Բիզնես ռիսկերի վերլուծություն</h1>
-            <p>Բիզնեսի ռիսկերի վերլուծությունը պոտենցիալ սպառնալիքների բացահայտման, գնահատման և առաջնահերթության գործընթացն է,
-                որոնք կարող են բացասաբար ազդել բիզնեսի նպատակների իրականացման վրա: Այս համապարփակ գնահատումը կազմակերպություններին
-                հնարավորություն է տալիս ակտիվորեն կառավարել ռիսկերը, կայացնել տեղեկացված որոշումներ և բարձրացնել ընդհանուր ճկունությունը
-                դինամիկ բիզնես միջավայրում:</p>
+             <h1>{t('service.service1.title7')}</h1>
+             <p>{t('service.service1.description7')}</p>
         </div>
-    </>
-}
+    );
+};

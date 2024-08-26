@@ -1,0 +1,99 @@
+{
+  "aboutTitle": "About Us",
+  "navBar": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "openHours": "Mon. - Fri. 09:00-18:00",
+    "address": "Yerevan, Davit Anhak 11/6"
+  },
+  "home": {
+    "title": "Welcome to  ",
+    "titleSpan": "the official page of SM Consulting",
+    "description": "SM Consulting will help you make your business faster and more accurate in all accounting functions",
+    "buttonText": "About Us",
+    "header": "CONSULTING COMPANY"
+  },
+  "main": {
+    "businessControl": "Implementation of Business Control Measures",
+    "businessControlDescription": "Implementing business control is key to reducing risks and ensuring regulatory compliance, strengthening the foundation of a resilient and well-managed organization. These measures systematically enhance operational integrity and foster a culture of accountability.",
+    "taxInspectionDescription": "Tax inspection support includes comprehensive assistance during the examination of financial records. This proactive approach involves transparent communication, meticulous documentation, and strategic representation to ensure a smooth and compliant audit process.",
+    "taxConsultingDescription": "SM Consulting's experienced and flexible accountants will help you keep up with changes in the Tax Code and related regulations, implementing your company's tax strategy planning, tax research, and risk management.",
+    "accountingRecoveryDescription": "Restoring an accounting base is a meticulous process of recovering the integrity of financial data after an unforeseen event. This involves systematic data review, backup recovery, and thorough validation to restore accurate financial records.",
+    "taxInspection": "Tax Inspection Support",
+    "accountingRecovery": "Accounting Base Recovery",
+    "consultingTitle": "Accounting Consulting",
+    "consultingDescription": "SM-Consulting offers a full range of accounting services for organizations and individuals in Armenia and abroad.",
+    "professionalConsulting": "Professional Accounting Consulting",
+    "accountingServices": "Accounting Services",
+    "taxConsulting": "Tax Consulting",
+    "staffManagement": "Staff Management",
+    "accountingServicesDescription": "SM Consulting's qualified accountants will help your new or established company implement an automated accounting system, conduct financial and tax accounting in accordance with international accounting standards, financial reporting, and tax legislation.",
+    "staffManagementDescription": "Having well-organized staff management provides legal protection in labor disputes and allows you to present yourself properly within the framework of labor legislation during inspections conducted by state authorities.",
+    "aboutTitle": "SM Consulting's qualified accountants will help your company implement an automated accounting system, conduct proper financial and tax accounting in accordance with international standards and tax legislation.",
+    "serviceList": {
+      "taxPlanning": "🔎 Tax Planning",
+      "policyDevelopment": "🔎 Development of Accounting Policy",
+      "riskAnalysis": "🔎 Business Risk Analysis",
+      "controlMeasures": "🔎 Implementation of Business Control Measures",
+      "automation": "🔎 Automation of Accounting and Related Business Processes",
+      "reporting": "🔎 Preparation of Financial Reports"
+    },
+  "learnMore": "Learn More"
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "addressTitle": "Address",
+    "phoneTitle": "Mobile Phone",
+    "emailTitle": "Email",
+    "phoneOffice": "Phone"
+  },
+  "subscribe": {
+    "title": "Subscribe"
+  },
+  "about": {
+    "mission": "Our main mission and goal is to provide professional accounting services that help avoid financial, tax, and managerial accounting issues, ensuring the success and advancement of the business.",
+    "years_of_experience": "Years of Experience",
+    "happy_customers": "Happy Customers",
+    "satisfaction": "Satisfaction",
+    "why_choose_us": "Why Choose SM Consulting",
+    "service_range": "We offer a wide range of services while ensuring high quality.",
+    "experienced_professionals": "Our professionals are both experienced and young.",
+    "client_care": "We emphasize conscientious attitude and individual approach to each client.",
+    "attention_to_details": "We care about every detail of our work."
+  },"service": {
+    "title1": "Automation of Accounting and Related Business Processes",
+    "description1": "Automation of accounting and related business processes is a transformative approach that uses technology to simplify financial operations, enhance efficiency, and reduce manual workload.",
+    "title2": "Accounting",
+    "description2": "Accounting is a systematic process of recording, analyzing, and interpreting financial transactions of a business. It provides critical insights into financial health and performance, aiding decision-making. Accurate accounting ensures compliance with regulatory standards and supports strategic planning for sustainable growth.",
+    "title3": "Report Preparation",
+    "description3": "Report preparation involves synthesizing financial data into concise, informative documents. These reports serve as key tools for management decision-making and regulatory compliance.",
+    "title4": "Awareness of Legislative Changes",
+    "description4": "Awareness of current political changes involves easing tensions and promoting diplomatic dialogue. It aims to foster stability, peace, and cooperation in evolving political landscapes. This process often requires international cooperation and a commitment to peaceful conflict resolution.",
+    "title5": "Tax Consulting",
+    "description5": "Rapidly changing tax legislation, as well as the complexity of interpreting certain legal regulations, generally poses risks to a business's ability to adapt to a changing environment. Meanwhile, the demand for investigation and planning of tax implications for business operations and various projects is increasing due to the continuous changes in tax laws and regulations. To meet your business needs, Real Accounting Company in Armenia offers tax consulting services tailored to your specific requirements.",
+    "service1": {
+      "title0": "Tax Accounting Planning",
+      "description0": "Accounting calculations form the basis of financial management, providing accurate accounting, reporting, and decision-making support. This accompanying block diagram outlines several key points of the accounting process.",
+      "title1": "1. Data Collection",
+      "description1": "Start by collecting relevant financial data, including transactions, receipts, invoices, and other relevant information. Ensure accuracy and completeness of data collection.",
+      "title2": "2. Transaction Entry",
+      "description2": "Systematically record financial transactions. Include details such as date, amount, involved accounts, and type of transaction. Use accounting software or manual ledgers for entry.",
+      "title3": "3. Journal Entries",
+      "description3": "Prepare entries for transactions in journal records. Classify transactions based on accounting principles, including debit and credit entries. Maintain chronological order for clarity.",
+      "title4": "4. Posting to Ledgers",
+      "description4": "Post journal entries to the appropriate ledgers. Update individual accounts to reflect changes in balances. This process organizes data based on specific accounts.",
+      "title5": "5. Trial Balance",
+      "description5": "Prepare a trial balance by summarizing ledger balances. Ensure that total debits equal total credits, serving as a preliminary check for accounting accuracy.",
+      "title7": "Business Risk Analysis",
+      "description7": "Business risk analysis is the process of identifying, assessing, and prioritizing potential threats that could adversely affect the achievement of business objectives. This comprehensive assessment enables organizations to actively manage risks, make informed decisions, and enhance overall resilience in a dynamic business environment."
+    }
+  },
+  "send_message": "Send Us a Message",
+  "your_name": "Your Name",
+  "phone_number": "Phone Number",
+  "email": "Email Address",
+  "your_message": "Your Message",
+  "send": "Send",
+  "contact_details": "Contact Details"
+}

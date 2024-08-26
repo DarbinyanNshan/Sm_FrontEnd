@@ -50,9 +50,8 @@
 
  .phone-number>span {
      font-size: 1.2rem;
-     margin-top: 0.2rem;
+     margin: 0.2rem 0.5rem;
      color: #264070;
-     margin-right: 0.5rem;
  }
 
  .map-text {
@@ -81,7 +80,14 @@
      box-shadow: 0.013rem 0.013rem 0.013rem 0.013rem var(--secound-bg-color);
      transition: .3s;
  }
-
+ .navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.3s ease-in-out;
+  }
  .logo>img {
      width: 8.75rem;
      height: 4.8rem;

@@ -35,7 +35,7 @@
     color: #9099a2;
     font-size: 1.2rem;
     margin-left: 15rem;
-    max-width: 800px;  
+    max-width: 800px;
     text-align: right;
 }
 
@@ -70,17 +70,17 @@
 
 .main1_description {
     color: #757575;
-    max-width: 300px;  
+    max-width: 300px;
     height: auto;
     font-size: 13px;
     margin: 0 20px;
-    background-color: var(--second-bg-color);  
+    background-color: var(--second-bg-color);
     text-align: left;
 }
 
 .main_server {
     font-size: 1.2rem;
-    color: white;  
+    color: white;
 }
 
 .main2 {
@@ -91,7 +91,6 @@
     margin-right: 50px;
     margin-bottom: 50px;
     transition: height 0.8s;
-    position: relative;
     overflow: hidden;
 }
 
@@ -104,7 +103,7 @@
 }
 
 .main2_icons:hover {
-    color: var(--second-bg-color);  
+    color: var(--second-bg-color);
     font-size: 51px;
 }
 
@@ -118,12 +117,12 @@
     text-align: left;
     font-size: 15px;
     margin-top: 30px;
-    max-width: 280px;  
+    max-width: 280px;
     color: var(--content-color);
 }
 
 .main2:hover {
-    background-color: white;  
+    background-color: white;
     height: 400px;
     cursor: pointer;
     position: relative;
@@ -150,16 +149,16 @@
     justify-content: center;
     align-items: center;
     border-left: 2.5px solid;
-    border-color: var(--second-bg-color);  
+    border-color: var(--second-bg-color);
     padding-left: 5px;
     color: white;
 }
 
 .accounting_server_text2 {
-    color: var(--second-bg-color);  
+    color: var(--second-bg-color);
     font-size: 20px;
     margin-left: 150px;
-    max-width: 800px;  
+    max-width: 800px;
     text-align: right;
 }
 
@@ -175,23 +174,22 @@
     border-color: var(--content-color);
 }
 
-.main_about_img > img {
+.main_about_img>img {
     height: 25rem;
     width: 30rem;
     margin: 3rem;
-    filter: brightness(0.9);
     border-radius: 5%;
     position: static;
 }
 
 .main_about_title {
     font-size: 1.2rem;
-    max-width: 40rem;  
+    max-width: 40rem;
 }
 
 .main_about_text {
     height: 100%;
-    max-width: 40rem;  
+    max-width: 40rem;
     font-size: 1.2rem;
     margin: 1.2rem 0;
     color: var(--content-color);
@@ -210,14 +208,14 @@
     justify-content: flex-end;
 }
 
-.main_about_btn > button {
+.main_about_btn>button {
     border: none;
     background-color: white;
     color: var(--text-color);
     cursor: pointer;
 }
 
-.main_about_btn > button::after {
+.main_about_btn>button::after {
     content: "";
     height: 2px;
     width: 0%;
@@ -226,7 +224,7 @@
     transition: 0.5s ease-in-out;
 }
 
-.main_about_btn > button:hover::after {
+.main_about_btn>button:hover::after {
     content: "";
     height: 2px;
     width: 100%;
@@ -259,7 +257,7 @@
 @media (max-width: 1000px) {
     .main_about_text {
         height: auto;
-        max-width: auto;  
+        max-width: auto;
     }
 }
 
@@ -267,7 +265,8 @@
     .main_about {
         margin: 1rem;
     }
-    .main_about_img > img {
+
+    .main_about_img>img {
         height: 20rem;
         width: 30rem;
     }
@@ -278,7 +277,7 @@
 
     .main_about_text {
         height: auto;
-        max-width: auto;  
+        max-width: auto;
         font-size: 1rem;
     }
 }
@@ -289,10 +288,11 @@
         text-align: left;
     }
 
-    .main2_section{
-          margin-left: 3rem;
+    .main2_section {
+        margin-left: 3rem;
     }
-    .main_about_img > img {
+
+    .main_about_img>img {
         height: 15rem;
         width: 20rem;
     }
@@ -303,29 +303,30 @@
 
     .main_about_text {
         height: auto;
-        max-width: auto;  
+        max-width: auto;
         font-size: 0.5rem;
     }
 }
 
 @media (max-width: 540px) {
-    .main_about_img > img {
+    .main_about_img>img {
         height: 15rem;
         width: 20rem;
     }
 
     .main_about_text {
         height: auto;
-        max-width: auto;  
+        max-width: auto;
         font-size: 1rem;
     }
 }
 
 @media (max-width: 420px) {
-    .main_about_img > img {
+    .main_about_img>img {
         height: 10rem;
         width: 15rem;
     }
+
     .main2 {
         margin-top: 70px;
         width: 280px;
@@ -333,20 +334,20 @@
 
     .main_about_text {
         height: auto;
-        max-width: auto;  
+        max-width: auto;
         font-size: 1rem;
     }
 }
 
 @media (max-width: 350px) {
-    .main_about_img > img {
+    .main_about_img>img {
         height: 8rem;
         width: 14rem;
     }
 
     .main_about_text {
         height: auto;
-        max-width: auto;  
+        max-width: auto;
         font-size: 1rem;
     }
 }

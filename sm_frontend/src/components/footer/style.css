@@ -1,7 +1,6 @@
 .footer {
   height: auto;
   width: 100%;
-  position: relative;
   color: var(--secound-bg-color);
   display: flex;
   justify-content: space-between;
@@ -37,7 +36,9 @@
   color: #aaaaaa;
   margin: 0.8rem 0.1rem;
 }
-
+.contact-content>p>span{
+  margin-left: 0.5rem;
+}
 .website_icon {
   display: flex;
   justify-content: space-between;

@@ -3,6 +3,8 @@ import './App.css';
 import LoadingPage from './components/loading';
 import { Router } from './layouts/router';
 import BackToTopButton from './components/backToToButton';
+import "./i18n";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +22,7 @@ function App() {
       ) : (
         <div>
           <Router />
-          <BackToTopButton/>
+          <BackToTopButton />
         </div>
       )}
     </div>
