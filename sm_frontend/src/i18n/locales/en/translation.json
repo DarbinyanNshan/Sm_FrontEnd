@@ -95,5 +95,11 @@
   "email": "Email Address",
   "your_message": "Your Message",
   "send": "Send",
-  "contact_details": "Contact Details"
+  "contact_details": "Contact Details",
+  "errorCode": "404",
+  "errorMessage": "Page Not Found!",
+  "errorText": "The requested document was not found on this server.",
+  "errorButton": "Go Back to Home Page",
+  "success_message": "Your message has been sent",
+  "error_message": "Your message has not been forwarded"
 }

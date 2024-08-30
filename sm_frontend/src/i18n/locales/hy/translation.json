@@ -98,9 +98,15 @@
   "send": "Ուղարկել",
   "contact_details": "Համակարգման տվյալներ",
   "images": {
-        "home": "../../assets/images/hy/",
-        "service": "../../assets/images/hy/service_img1.jpg",
-        "abote1": "../../assets/images/hy/about_img_1.jpg",
-        "abote2": "../../assets/images/hy/about_img_2.jpg"
-    }
+    "home": "../../assets/images/hy/",
+    "service": "../../assets/images/hy/service_img1.jpg",
+    "abote1": "../../assets/images/hy/about_img_1.jpg",
+    "abote2": "../../assets/images/hy/about_img_2.jpg"
+  },
+  "errorCode": "404",
+  "errorMessage": "Էջը չի գտնվել!",
+  "errorText": "Պահանջվող փաստաթուղթը չի գտնվել այս սերվերում:",
+  "errorButton": "հետ գնալ Գլխավոր Էջ",
+  "success_message": "Ձեր հաղորդագրություն ուղղարկվել է",
+  "error_message": "Ձեր հաղորդագրություն չի ուղղարկվել"
 }

@@ -7,6 +7,7 @@ import { About } from "../../pages/about";
 import { Footer } from "../../components/footer";
 import { Service } from "../../pages/service";
 import { ContactUs } from "../../pages/contact";
+import { Error404 } from "../../pages/error404";
 
 
 export const Router = () => {
@@ -20,6 +21,7 @@ export const Router = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Service />} />
                 <Route path="/contact" element={<ContactUs />} />
+                <Route path="*"  element={<Error404/>} />
             </Routes>
             <Footer />
         </div>
