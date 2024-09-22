@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./style.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
@@ -8,10 +8,14 @@ import { FiPhoneCall } from "react-icons/fi";
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from "../../i18n/LanguageSwitcher";
 
+import { FaBars } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
+
 export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isFixed, setIsFixed] = useState(false);
     const { t } = useTranslation();
+    const navRef = useRef(null); // Add a ref to the navbar
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,6 +33,33 @@ export const NavBar = () => {
         };
     }, []);
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
+    }, [isOpen]);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        // Add event listener to close navbar when clicking outside
+        if (isOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isOpen]);
+
     return (
         <>
             <div className="info">
@@ -41,20 +72,27 @@ export const NavBar = () => {
                     <p className="map-text"><span><BiMap /></span> {t('navBar.address')}</p>
                 </div>
             </div>
-            <nav className={`navbar ${isFixed ? "fixed" : ""}`}>
+            <nav ref={navRef} className={`navbar ${isFixed ? "fixed" : ""}`}>
                 <div className="logo">
                     <img src={logo} alt="Logo" />
                 </div>
-                <nav className={`nav-links ${isOpen && "open"}`}>
+                <div className={`nav-links ${isOpen ? "open" : ""}`}>
+                    {isOpen && (
+                        <div className="close-icon" onClick={() => setIsOpen(false)}>
+                            <IoClose />
+                        </div>
+                    )}
                     <NavLink to="/" onClick={() => setIsOpen(false)}>{t('navBar.home')}</NavLink>
                     <NavLink to="/about" onClick={() => setIsOpen(false)}>{t('aboutTitle')}</NavLink>
                     <NavLink to="/services" onClick={() => setIsOpen(false)}>{t('navBar.services')}</NavLink>
                     <NavLink to="/contact" onClick={() => setIsOpen(false)}>{t('navBar.contact')}</NavLink>
-                    <LanguageSwitcher />
-                </nav>
-                <div className={`new-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
-                    <div className="bar"></div>
+                    <LanguageSwitcher setIsOpen={setIsOpen} />
                 </div>
+                {!isOpen && (
+                    <div className="new-toggle" onClick={() => setIsOpen(true)}>
+                        <FaBars />
+                    </div>
+                )}
             </nav>
         </>
     );

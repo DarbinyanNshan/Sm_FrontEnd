@@ -5,39 +5,46 @@ import { FaCheckSquare } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
 
 export const About = () => {
-    const { t , i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         const numbers = document.querySelectorAll('.number');
-        const counters = Array(numbers.length);
-        const intervals = Array(counters.length);
-        counters.fill(0);
+        const counters = Array(numbers.length).fill(0);
+        const intervals = [];
 
         numbers.forEach((number, index) => {
             intervals[index] = setInterval(() => {
                 if (counters[index] === parseInt(number.dataset.num)) {
-                    clearInterval(counters[index])
+                    clearInterval(intervals[index]);
                 } else {
                     counters[index] += 1;
                     number.innerHTML = counters[index];
                 }
-            }, 50)
-        })
+            }, 50);
+        });
+
+        return () => {
+            intervals.forEach(clearInterval);
+        };
     }, []);
 
     const getImagePath = (imageName) => {
-        const lang = i18n.language;
-        return require(`../../assets/images/${lang}/${imageName}`);
+        try {
+            const lang = i18n.language;
+            return require(`../../assets/images/${lang}/${imageName}`);
+        } catch (error) {
+            console.error("Image not found, loading fallback image.", error);
+            return require(`../../assets/images/default/fallback.jpg`); 
+        }
     };
-
 
     return (
         <>
             <div className="about-img"></div>
             <div className="about-section">
                 <div className="about">
-                    <div className="about-contant">
-                        <h2 className="about-itle">
+                    <div className="about-content">
+                        <h2 className="about-title">
                             {t('aboutTitle')}
                         </h2>
                         <p className="about-content-text">
@@ -64,16 +71,15 @@ export const About = () => {
                         </div>
                     </div>
                     <div className="about-us">
-                    <img  src={getImagePath('about_img_1.jpg')} alt="" />
-
+                        <img src={getImagePath('about_img1.jpg')} alt="" />
                     </div>
                 </div>
                 <div className="about">
                     <div className="about-us">
-                    <img  src={getImagePath('about_img_2.jpg')} alt="" />
+                        <img src={getImagePath('about_img2.jpg')} alt="" />
                     </div>
-                    <div className="about-contant">
-                        <h2 className="about-itle">
+                    <div className="about-content">
+                        <h2 className="about-title">
                             {t('about.why_choose_us')}
                         </h2>
                         <p className="about-content-text">

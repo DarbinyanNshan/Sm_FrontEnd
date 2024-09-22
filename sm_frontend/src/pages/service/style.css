@@ -36,7 +36,6 @@
 }
 
 .service_img1 {
-    /* background-image: url(../../assets/images/service_img_1.jpg); */
     height: 20rem;
     object-fit: cover;
     width: 25rem;
@@ -92,6 +91,8 @@
     font-size: 2rem;
     margin: 1rem 0;
     cursor: pointer;
+    color: var(--title-color);
+
 }
 
 .service_2_content>h1:hover {
@@ -117,6 +118,9 @@
 }
 
 @media (max-width:1180px) {
+    .service {
+        margin-top: 15rem;
+    }
     .service_2 {
         display: flex;
         flex-wrap: wrap;
@@ -134,18 +138,21 @@
     .service {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: left;
         justify-content: center;
     }
 
     .service_2_contant {
-        margin: 0.2rem 4rem;
         font-size: 1.5rem;
     }
+    .service {
+        margin: 15rem 2rem;
+    }
 
-    .service_2_contant>h1 {
-        font-size: 1.5rem;
-        margin: 4rem 0;
+    .service_2_content>h1 {
+        font-size: 2rem;
+        margin: 1rem 0;
+        cursor: pointer;
     }
 
     .service_2_contant>h3 {

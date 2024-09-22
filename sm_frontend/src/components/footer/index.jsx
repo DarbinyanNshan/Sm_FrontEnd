@@ -6,7 +6,7 @@ import { BiLogoLinkedin } from "react-icons/bi";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { RiHomeOfficeFill } from "react-icons/ri";
+// import { RiHomeOfficeFill } from "react-icons/ri";
 
 
 export const Footer = () => {

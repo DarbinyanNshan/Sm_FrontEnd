@@ -49,8 +49,13 @@ export const Main = () => {
     };
 
     const getImagePath = (imageName) => {
-        const lang = i18n.language;
-        return require(`../../assets/images/${lang}/${imageName}`);
+        try {
+            const lang = i18n.language;
+            return require(`../../assets/images/${lang}/${imageName}`);
+        } catch (error) {
+            console.error("Image not found, loading fallback image.", error);
+            return require(`../../assets/images/default/fallback.jpg`); 
+        }
     };
 
     return (

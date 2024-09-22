@@ -12,23 +12,24 @@ const flags = {
     hy: Armenia,
 };
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({ setIsOpen }) => {
     const { i18n } = useTranslation();
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsDropdownOpen] = useState(false);
 
     const currentLanguage = i18n.language;
     const currentFlag = flags[currentLanguage] || English;
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        setIsOpen(false);
+        setIsDropdownOpen(false);
+        setIsOpen(false); 
     };
 
     return (
         <div className="language-switcher">
             <button
                 className="dropdown-toggle"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsDropdownOpen(!isOpen)}
                 style={{ backgroundImage: `url(${currentFlag})` }}
                 title={`Language: ${currentLanguage.toUpperCase()}`}
             />

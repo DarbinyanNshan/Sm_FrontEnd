@@ -1,7 +1,7 @@
 .footer {
   height: auto;
   width: 100%;
-  color: var(--secound-bg-color);
+  color: #aaaaaa;
   display: flex;
   justify-content: space-between;
   background-color: var(--title-color);
@@ -16,8 +16,7 @@
   border: none;
   background-color: var(--title-color);
 }
-
-.pages_link>div:hover {
+.pages_link>div>button:hover {
   color: var(--text-color);
   transition: 0.7s ease;
 }
@@ -136,7 +135,10 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  .website>h2{
+    margin-top: 1rem;
+  }
   .contact-content>p {
     font-size: 1rem;
   }
