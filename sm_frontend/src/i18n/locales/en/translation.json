@@ -1,8 +1,8 @@
 {
-  "aboutTitle": "About Us",
   "navBar": {
     "home": "Home",
     "services": "Services",
+    "about": "About Us",
     "contact": "Contact",
     "openHours": "Mon. - Fri. 09:00-18:00",
     "address": "Yerevan, Davit Anhak 11/6"
@@ -39,7 +39,7 @@
       "automation": "🔎 Automation of Accounting and Related Business Processes",
       "reporting": "🔎 Preparation of Financial Reports"
     },
-  "learnMore": "Learn More"
+    "learnMore": "Learn More"
   },
   "contactUs": {
     "title": "Contact Us",
@@ -61,7 +61,8 @@
     "experienced_professionals": "Our professionals are both experienced and young.",
     "client_care": "We emphasize conscientious attitude and individual approach to each client.",
     "attention_to_details": "We care about every detail of our work."
-  },"service": {
+  },
+  "service": {
     "title1": "Automation of Accounting and Related Business Processes",
     "description1": "Automation of accounting and related business processes is a transformative approach that uses technology to simplify financial operations, enhance efficiency, and reduce manual workload.",
     "title2": "Accounting",
@@ -101,5 +102,6 @@
   "errorText": "The requested document was not found on this server.",
   "errorButton": "Go Back to Home Page",
   "success_message": "Your message has been sent",
-  "error_message": "Your message has not been forwarded"
+  "error_message": "Your message has not been forwarded",
+  "footer_text": "All rights reserved. Created by High-Tech Service."
 }

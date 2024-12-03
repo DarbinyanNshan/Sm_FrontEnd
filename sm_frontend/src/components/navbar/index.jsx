@@ -15,7 +15,7 @@ export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isFixed, setIsFixed] = useState(false);
     const { t } = useTranslation();
-    const navRef = useRef(null); // Add a ref to the navbar
+    const navRef = useRef(null); 
 
     useEffect(() => {
         const handleScroll = () => {
@@ -48,7 +48,7 @@ export const NavBar = () => {
             }
         };
 
-        // Add event listener to close navbar when clicking outside
+      
         if (isOpen) {
             document.addEventListener("mousedown", handleClickOutside);
         } else {
@@ -83,7 +83,7 @@ export const NavBar = () => {
                         </div>
                     )}
                     <NavLink to="/" onClick={() => setIsOpen(false)}>{t('navBar.home')}</NavLink>
-                    <NavLink to="/about" onClick={() => setIsOpen(false)}>{t('aboutTitle')}</NavLink>
+                    <NavLink to="/about" onClick={() => setIsOpen(false)}>{t('navBar.about')}</NavLink>
                     <NavLink to="/services" onClick={() => setIsOpen(false)}>{t('navBar.services')}</NavLink>
                     <NavLink to="/contact" onClick={() => setIsOpen(false)}>{t('navBar.contact')}</NavLink>
                     <LanguageSwitcher setIsOpen={setIsOpen} />

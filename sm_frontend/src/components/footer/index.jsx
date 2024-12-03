@@ -33,7 +33,7 @@ export const Footer = () => {
             </div>
             <div>
               <button onClick={() => onNavigate("/about")}>
-                {t("aboutTitle")}
+                {t("navBar.about")}
               </button>
             </div>
             <div>
@@ -81,7 +81,7 @@ export const Footer = () => {
               </a>
             </div>
             <div className="in">
-              <a href="#" onClick={(e) => e.preventDefault()} aria-label="Instagram">
+              <a href="https://www.instagram.com/smconsultingarmenia"  aria-label="Instagram">
                 <FaInstagram />
               </a>
             </div>
@@ -99,7 +99,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer_text">
-        {/* <p> &copy; 2023 by Darbinyan </p> */}
+      <p>{t("footer_text")}</p>
       </div>
     </>
   );

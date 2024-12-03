@@ -85,21 +85,21 @@
 }
 
 .footer_text {
-  height: 8vh;
+  height: auto;
   width: 100%;
   background-color: var(--title-color);
   border-top: 1px solid;
   border-color: #60606091;
+  padding: 1rem;
 }
 
-.footer_text>p {
-  margin-left: 8rem;
+.footer_text > p {
+  margin-left: 8rem; 
   margin-top: 1rem;
   text-align: left;
   font-size: 1.2rem;
   color: #aaaaaa;
 }
-
 .footer_logo>img {
   height: 10rem;
   width: 15rem;
@@ -124,9 +124,9 @@
     margin-top: 2rem;
   }
 
-  .footer_text>p {
-    margin: 1rem 0;
-    text-align: center;
+  .footer_text > p {
+    margin-left: 4rem; 
+    font-size: 1rem; 
   }
 
   .contact-content {
@@ -146,5 +146,10 @@
   .website_icon>div>a {
     margin-top: 1rem;
   }
-  
+  .footer_text > p {
+    margin-left: 0; 
+    margin-right: 0;
+    text-align: center;
+    font-size: 0.8rem; 
+  }
 }
